@@ -8,6 +8,8 @@ packages = [{include = "rsp_bot"}]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+environs = "^9.5.0"
+aiogram = "^2.24"
 
 
 [build-system]
