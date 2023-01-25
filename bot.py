@@ -8,6 +8,7 @@ from handlers.other_handlers import register_other_handlers
 
 logger = logging.getLogger(__name__)
 
+
 def register_all_handlers(dp: Dispatcher) -> None:
     register_user_handlers(dp)
     register_other_handlers(dp)
