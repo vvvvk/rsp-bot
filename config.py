@@ -12,7 +12,7 @@ class Config:
     bot: TgBot
 
 
-def load_cfg(path: str | None) -> Config:
+def load_cfg(path: str | None = None) -> Config:
     env = Env()
     env.read_env(path)
     config = Config(TgBot(env('BOT_TOKEN')))

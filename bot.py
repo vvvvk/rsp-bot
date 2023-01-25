@@ -33,11 +33,11 @@ async def main():
     try:
         await dp.start_polling()
     finally:
-        await bot.close()
+        await (await bot.get_session()).close()
 
 
 if __name__ == '__main__':
     try:
-        asyncio.run(main)
+        asyncio.run(main())
     except (KeyboardInterrupt, SystemExit):
         logger.error('Bot stopped!')
